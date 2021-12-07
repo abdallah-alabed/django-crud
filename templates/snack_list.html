@@ -1,6 +1,7 @@
 {% extends '_base.html' %}
 {% block title %} Snacks List Page {% endblock %}
 {% block content %}
+<button><a href = "create"> Add a New Snack</a></button>
 <ol>
     {% for i in object_list %}
     <li> <a href="{{i.get_absolute_url}}"> <h1>{{i.title}} </h1> </a></li>

@@ -1,6 +1,7 @@
 {% extends '_base.html' %}
 {% block title %} Create New Snack Page {% endblock %}
 {% block content %}
+<a href="/"><h3> Back To The List Page </h3></a>
 <form action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
